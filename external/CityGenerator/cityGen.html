@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>City Generating Sample</title>
+        <style>
+             body {
+                    font-family: Monospace;
+                    color: white;
+                    background: #404040;
+                }
+                .inline-container {
+                    width:  90%;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .frame {
+                    border: thin solid white; 
+                    text-align: center;
+                }
+                .heading{
+                    font-size: 36px;
+                }
+                div #header {         
+                    margin-bottom: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+                body div #intro {
+                    width: 200px;
+                    min-height: 200px;
+                    border: thin solid white; 
+                    display: inline-block;
+                    vertical-align: top;
+                    text-align: center;
+                    margin-right: 20px;
+
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-size: 16px;
+                } 
+                body #canvas {
+                    border: thin solid white;
+                    display: inline-block;
+                }
+                body div #options {
+                    width = 200px;
+                    min-height: 200px;
+                    border: thin solid white;
+                    display: inline-block;
+                    vertical-align: top;
+                    text-align: center;
+                    margin-left: 20px;
+                    padding-left: 10px; 
+                    padding-right: 10px;
+                }
+                #actionLogger {
+                        display: inline-block;
+                }
+                #gui-container {
+                    display: inline-block;
+                    
+                }
+        </style> 
+    </head>
+    <body>
+        <div id="header" class="frame heading">City Generator</div>
+        <br><br>
+        <div id="display" class="inline-container">
+            <canvas id="canvas" width="750" height="750"></canvas>
+            <div id="gui-container">
+                <div id="gui-wrapper"></div>
+                <br><br><br>
+                <textarea id="actionLogger" rows="30" cols="25"></textarea>
+            </div>
+            
+            <input id="aFile" type="file" multiple style="visibility: hidden" onchange="addfile()"/>
+        </div>
+        
+        
+        <script src="js/three.min.js"></script>             <script src="http://threejs.org/examples/js/controls/OrbitControls.js">
+        </script>		
+        <script src="js/OBJExporter.js"></script>
+        <script src="js/dat.gui.min.js"></script>>
+        <script src="js/FileSaver.min.js"></script>
+        <script src="js/core.js"></script>
+        <script src="js/start.js"></script>    
+    </body>
+</html>   

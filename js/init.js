@@ -69,7 +69,7 @@ function init() {
         $("#about").goTo();
     });
     rec.click(function(){
-        $("#rec-info").goTo();
+        $("#sec1").goTo();
     });
     projects.click(function(){
         $("#h_projects").goTo();

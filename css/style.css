@@ -106,10 +106,19 @@ body {
 }
 .section-divider {
     width: 80%;
-    margin-top: 4%;
+    margin-top: 7%;
+    margin-bottom: 3%;
     margin-left: 10%;
     height: 2px;
     background-color: rgba(200, 200, 200, 0.5);
+}
+.section-divider-alt {
+    width: 70%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    height: 2px;
+    background-color: rgba(55, 55, 55, 0.5);
 }
 /* /////////////////
     Banners 
@@ -197,25 +206,6 @@ body {
   Diversions
 /////////////////*/
 
-#rec {
-    color: #323b3c;
-    background-color: #ffffff
-}
-#rec .title {
-    font-size: 45px;
-    text-align: center;
-}
-#rec .row {
-}
-#rec .col-md-4 {
-}
-#rec-info {
-    padding-top: 300px;
-    padding-bottom: 100px;
-    color: #323b3c;
-    background-color: #ffffff;
-    text-align: center;
-}
 #hook {
      -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 5s; /* Firefox < 16 */
@@ -239,6 +229,56 @@ body {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+#rec {
+    color: #323b3c;
+    background-color: #ffffff
+}
+#rec .title {
+    font-size: 45px;
+    text-align: center;
+}
+#rec .row {
+}
+#rec .col-md-4 {
+}
+#rec-info {
+    padding-top: 300px;
+    padding-bottom: 100px;
+    color: #323b3c;
+    background-color: #ffffff;
+    text-align: center;
+}
+.rec-info-wrapper {
+    max-width: 90%;
+    margin: auto;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+.rec-info-section {
+    max-width: 50%;
+    margin-left: 25%;
+}
+.rec-info-section-title {
+    font-size: 70px;
+    font-weight: bold;
+    
+}
+.list-format-head {
+    text-align: left;
+    margin-left: 15%;
+}
+.list-format-item {
+    text-align: right;
+}
+.s-font {
+    font-size: 15px;
+}
+#sec1 {
+    background-color: rgba(200, 200, 200, 0.2);
+}
+#sec2 {
+    background-color: rgba(200, 200, 200, 0.4);
+}
 /*/////////////////
   Projects
 /////////////////*/
@@ -258,7 +298,6 @@ body {
     display: inline-block;
     margin-top: 10%;
     margin-left: 30%;
-    margin-right: 60%;
     color: rgba(255,255,255, 0.85);
     font-style: oblique;
     font-weight: bolder;
@@ -468,6 +507,14 @@ body {
     fill: white;
 }
 
+#icon-books{
+    width: 60%;
+    fill: black;
+    display: block;
+    margin: auto;
+    border:  solid #323b3c;
+    margin-bottom: 2%;
+}
 /*//////////////////
     Resizing
 //////////////////*/

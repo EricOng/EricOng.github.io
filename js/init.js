@@ -56,11 +56,15 @@ function init() {
          }, 'xml');
      });
     
-    var home, rec, cont, projects;
+    /*
+     * Auto-scroll to sections.
+     */
+    var home, rec, cont, projects, darrow;
     home = $(".btn-home");
     rec = $(".btn-rec");
     cont = $(".btn-cont");
     projects = $(".btn-proj");
+    darrow = $("#darrow");
     home.click(function(){
         $("#about").goTo();
     });
@@ -73,7 +77,9 @@ function init() {
     cont.click(function(){
         $("#contact").goTo();
     });
-        
+    darrow.click(function(){
+        $("#sec1").goTo();
+    });
     (function() {
         $.fn.goTo = function() {
             $('html, body').animate({

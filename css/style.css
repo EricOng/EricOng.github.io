@@ -263,13 +263,11 @@ body {
     
 }
 .rec-info-section .row {
-    padding-top: 1%;
-    padding-bottom: 1%;
 }
 
 .list-format-head {
-    text-align: left;
-    margin-left: 15%;
+    text-align: center;
+    margin: auto;
 }
 .list-format-item {
     text-align: right;
@@ -287,7 +285,98 @@ body {
     background-color: rgba(190, 190, 190, 0.2);
 }
 .alt4 {
-    background-color: rgba(220, 220, 220, 0.6);
+    background-color: rgba(160, 160, 160, 0.6);
+}
+.alt4-l {
+    background-color: rgba(160, 160, 160, 0.4);
+}
+.hvr-text {
+    width: 180px;
+    height: 180px;
+    color: rgba(0,0,0,0);
+    text-align: center;
+    padding-top: 30%;
+    font-size: 20px;
+}
+.hvr-text:hover {
+    visibility: visible;
+    color: white;
+}
+.book-wrapper {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.book-art {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    margin: 3%;
+    box-shadow: 0 0 5px #101010;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mistborn {
+    background-image: url(images/mistborn.jpg);
+}
+#mistborn:hover {
+    background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ), url(images/mistborn.jpg);
+}
+#wellof {
+    background-image: url(images/wellofascension.jpg);
+}
+#wellof:hover {
+    background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ), url(images/wellofascension.jpg);
+}
+#hero {
+    background-image: url(images/herooftheages.jpg);
+}
+#hero:hover {
+    background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ), url(images/herooftheages.jpg);
+}
+#wind {
+    background-image: url(images/thenameofthewind.jpg);
+}
+#wind:hover {
+    background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ), url(images/thenameofthewind.jpg);
+}
+#fears {
+    background-image: url(images/thewisemansfear.jpg);
+}
+#fears:hover {
+    background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ), url(images/thewisemansfear.jpg);
+}
+#lies {
+    background-image: url(images/liesoflockelamora.jpg);
+}
+#lies:hover {
+    background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ), url(images/liesoflockelamora.jpg);
+}
+#repub {
+    background-image: url(images/RepublicThievesPortada.jpg);
+}
+#repub:hover {
+    background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ), url(images/RepublicThievesPortada.jpg);
 }
 /*/////////////////
   Projects
@@ -345,23 +434,6 @@ body {
 
 #gll-1 {
     background-image: url(images/gll-landing.PNG);
-}
-#gll-1:hover {
-/*
-    // Darkens Background // 
-    background:
-        linear-gradient(
-          rgba(0, 0, 0, 0.7), 
-          rgba(0, 0, 0, 0.7)
-        ), url(images/gll-landing.PNG);
-    
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-*/
 }
 
 #gll-2 {
@@ -426,7 +498,9 @@ body {
 .fl-r {
     float: right;
 }
-
+.pad {
+    padding: 2%;
+}
 .offset1 {
     padding-left: 10%;
 }

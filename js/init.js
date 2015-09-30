@@ -78,7 +78,7 @@ function init() {
         $("#contact").goTo();
     });
     darrow.click(function(){
-        $("#sec1").goTo();
+        $("#loc1").goTo();
     });
     (function() {
         $.fn.goTo = function() {

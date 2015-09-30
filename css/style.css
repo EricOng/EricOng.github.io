@@ -477,17 +477,18 @@ body {
     padding-bottom: 300px;
 }
 
-#resume {
+#resume, #resume:visited {
     display: inline;
     text-align: center;
     padding-top: 10px;
     padding-left: 15px;
     padding-bottom: 10px;
-    padding-right: 15px;    
+    padding-right: 15px;   
+    color: black;
 }
-
 #resume:hover {
     box-shadow: 0 0 10px black;
+    color: white;
 }
 
 /*/////////////////

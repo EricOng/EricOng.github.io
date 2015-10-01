@@ -4,6 +4,12 @@ Number.prototype.mod = function(n) {
         };
 
 function init() {
+    $("#darrow #icon-darrow").hide();
+    $("#more").hover(function() {
+        $("#darrow #icon-darrow").show();
+    }, function() {
+        $("#darrow #icon-darrow").hide();
+    });
 };
 
 (function($) {
@@ -13,11 +19,13 @@ function init() {
           $("#dev").removeClass("undline");
           $("#icon_cc").hide();
           $("#icon_ct").hide();
+          $("#resume-arrow").hide();
       }
       else{
           $("#dev").addClass("undline");
-        $("#icon_ct").show();
-        $("#icon_cc").show();
+          $("#icon_ct").show();
+          $("#icon_cc").show();
+          $("#resume-arrow").show();
       }
     };
     
@@ -83,7 +91,7 @@ function init() {
     (function() {
         $.fn.goTo = function() {
             $('html, body').animate({
-                scrollTop: $(this).offset().top + 'px'
+                scrollTop: $(this).offset().top  + 'px'
             }, 'slow');
             return this; 
         }

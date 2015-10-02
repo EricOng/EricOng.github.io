@@ -144,7 +144,6 @@ body {
 //////////////////*/
 .banner {
     width: auto;
-    min-height: 350px;
     border: thin solid;
     border-color: rgba(0,0,0,0);
 }
@@ -211,8 +210,8 @@ body {
 }
 
 #about_text {
-    margin: 70px 13% auto;
-    max-width: 53%;
+    margin: 30px 13% auto;
+    max-width: 63%;
     max-height: 200px;
     display: inline-block;
     text-align: center;
@@ -340,7 +339,7 @@ body {
     padding-bottom: 1%;
 }
 .book-author {
-    margin-top: 7%;
+    margin-top: 5%;
     margin-left: 8%;
     width: 200px;
     float: left;
@@ -420,8 +419,8 @@ body {
 }
 
 .logo {
-    width: 360px;
-    height: 180px;
+    width: 280px;
+    height: 120px;
     margin: 2%;
     background-color: rgba(255,255,255,1);
     background-size: cover;
@@ -649,12 +648,21 @@ body {
 }
 
 #icon-books{
-    width: 60%;
+    width: 30%;
     fill: black;
     display: block;
     margin: auto;
     border:  solid #323b3c;
     margin-bottom: 2%;
+}
+#icon-game {
+    width: 20%;
+    fill: black;
+    display: block;
+    border:  solid #323b3c;
+    margin-left: auto;
+    margin-bottom: 2%;
+    margin-right: 41%;
 }
 /*//////////////////
     Resizing

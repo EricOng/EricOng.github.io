@@ -67,17 +67,19 @@ function init() {
     /*
      * Auto-scroll to sections.
      */
-    var home, rec, cont, projects, darrow;
+    var home, rec, cont, projects, darrow, books, games;
     home = $(".btn-home");
     rec = $(".btn-rec");
     cont = $(".btn-cont");
     projects = $(".btn-proj");
     darrow = $("#darrow");
+    books = $("#b");
+    games = $("#g");
     home.click(function(){
         $("#about").goTo();
     });
     rec.click(function(){
-        $("#loc1").goTo();
+        $("#sec1").goTo();
     });
     projects.click(function(){
         $("#h_projects").goTo();
@@ -86,7 +88,13 @@ function init() {
         $("#contact").goTo();
     });
     darrow.click(function(){
-        $("#loc1").goTo();
+        $("#sec1").goTo();
+    });
+    books.click(function(){
+        $("#rec-info").goTo();
+    });
+    games.click(function(){
+        $("#sec2").goTo();
     });
     (function() {
         $.fn.goTo = function() {

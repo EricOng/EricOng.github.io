@@ -54,6 +54,9 @@ body {
 .shdw-w {
     box-shadow: 0 0 30px white;
 }
+.shdw-w-l {
+    box-shadow: 0 0 15px white;
+}
 .shdw-b {
     box-shadow: 0 0 30px black;
 }
@@ -90,7 +93,9 @@ body {
 #h_top div {
     float: right;
 }
-
+#h_about {
+    font-size: 80px;
+}
 #h_bot {
     margin: 2% 0 2% 0;
 }
@@ -133,11 +138,39 @@ body {
 }
 .section-divider-alt {
     width: 70%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     margin-left: 15%;
     height: 2px;
     background-color: rgba(55, 55, 55, 0.5);
+}
+#about-menu {
+    max-width: 50%;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+#about-menu p {
+    float: right;
+    padding: 5%;
+    font-size: 50px;
+}
+#about-menu p:hover {
+    background-color: rgba(80, 80, 80, 0.4);
+}
+#about-home {
+    padding-top: 5%;
+    max-width: 90%;
+    text-align: right;
+    font-size: 20px;
+}
+#about-home a{
+    color: #dddddd;
+}
+#about-home a:visited, #about-home a:hover {
+    text-decoration: none;
+}
+#about-home a:hover {
+    color: white;
 }
 /* /////////////////
     Banners 
@@ -167,8 +200,7 @@ body {
     height: 400px;
 }
 #welcome .wrapper {
-    width: 50%;
-    max-width: 90%;
+    width: 60%;
     min-height: 500px;
     margin-top: 50px;
     margin-left: 8%;
@@ -189,17 +221,21 @@ body {
     background-position: 50% 70%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(images/USB-3.png);
+    background-image: url(images/USB.png);
 /*    background-color: rgba(8, 53, 66, 0.5);*/
-    
+}
+#about-page {
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/AC.png);
 }
 
 #about .wrapper2 {
-    display: inline-block;
-    max-width: 90%;
     min-height: 500px;
-    margin-top: 150px;
-    text-shadow: 3px 3px #000000; 
+    margin-top: 15%;
+/*    text-shadow: 3px 3px #000000; */
 }
 #about h1 {
     width: 50%;
@@ -210,9 +246,9 @@ body {
 }
 
 #about_text {
-    margin: 30px 13% auto;
-    max-width: 63%;
-    max-height: 200px;
+    margin-top: 5%;
+    max-width: 95%;
+    font-size: 35px;
     display: inline-block;
     text-align: center;
 }
@@ -245,20 +281,29 @@ body {
     to   { opacity: 1; }
 }
 #rec {
+/*
     color: #323b3c;
     background-color: #ffffff;
     height: 400px;
+*/
+    max-width: 22%;
+    margin-left: 40%;
+    margin-top: 0%;
+    text-align: center;
+    box-shadow: 0 0 15px white;
 }
 #rec .title {
-    font-size: 45px;
+    padding: 1% 8% 1% 8%;
+    font-size: 40px;
     text-align: center;
 }
 #rec #more {
-    width: 38%;
-    margin-left: 31%;
 }
 #rec #more:hover {
-    box-shadow: 0 0 15px black;
+    border: thin solid #323b3c;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px white;
+    
 }
 /*
 #rec #more:hover {
@@ -266,6 +311,16 @@ body {
     color: white;
 }
 */
+#btn-learn {
+    text-decoration: none;
+}
+#btn-learn:visited {
+    color: black;
+}
+#btn-learn:hover {
+    color: white;
+    box-shadow: 0 0 15px black;
+}
 #rec .col-md-4 {
 }
 #rec-info {
@@ -448,7 +503,7 @@ body {
     color: rgba(255,255,255, 0.85);
     font-style: oblique;
     font-weight: bolder;
-    text-shadow: 4px 4px #355264;
+    text-shadow: 4px 4px #202020;
 }
 
 .project-name {
@@ -556,6 +611,9 @@ body {
 .pad-2x {
     padding: 4%;
 }
+.pad-long {
+    padding: 1% 4% 1% 4%;
+}
 .offset1 {
     padding-left: 10%;
 }
@@ -589,6 +647,9 @@ body {
 .offset6-2x {
     padding-top: 4%;
 }
+.offset6-4x {
+    padding-top: 8%;
+}
 .offset7-4x {
     margin-bottom: 8%;
 }
@@ -600,13 +661,11 @@ body {
 }
 .line-wrapper {
     display: inline-block;
-    width: 75%;
-    min-height: 350px;
     padding-left: 10px;
     margin-left: 40px;
     margin-bottom: 50px;
-    border-top: thin solid white;
-    border-right: thin solid white;
+    border-top: thin solid black;
+    border-right: thin solid black;
     
 }
 
@@ -633,7 +692,7 @@ body {
 }
 #icon_lo {
     width: 10%;
-    margin: 2%;
+    margin: 0% 2% 0% 2%;
     float: left;
 }
 
@@ -694,6 +753,19 @@ body {
         width: 480px;
         height: 300px;
     }
+    #h_about {
+        font-size: 40px;
+    }
+    #about_text {
+        font-size: 20px;
+    }
+    #darrow p {
+        font-size: 20px;
+    }
+    #icon-darrow {
+        width: 36px;
+        height: 36px;
+    }
 }
 
 @media all and (max-width: 1000px) {
@@ -710,6 +782,9 @@ body {
     #projects h2 {
         font-size: 15px;
     }
+    #welcome {
+        font-size: 60px;
+    }
     #welcome #wel {
         float: left;
     }
@@ -724,6 +799,12 @@ body {
     }
     #h_bot {
         font-size: 20px;
+    }
+    #h_about {
+        font-size: 20px;
+    }
+    #about_text {
+        font-size: 15px;
     }
 }
 

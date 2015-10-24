@@ -9,6 +9,9 @@ body {
     font-size: 30px;
     color: #dddddd;
 } 
+a:focus, a:hover {
+    text-decoration: none;
+}
 /* /////////////////
     Others 
 //////////////////*/
@@ -145,14 +148,14 @@ body {
     background-color: rgba(55, 55, 55, 0.5);
 }
 #about-menu {
-    max-width: 50%;
+    max-width: 60%;
     margin-top: 5%;
     margin-left: 20%;
 }
 #about-menu p {
     float: right;
-    padding: 5%;
-    font-size: 50px;
+    padding: 2%;
+    font-size: 30px;
 }
 #about-menu p:hover {
     background-color: rgba(80, 80, 80, 0.4);
@@ -160,7 +163,7 @@ body {
 #about-home {
     padding-top: 5%;
     max-width: 90%;
-    text-align: right;
+    text-align: left;
     font-size: 20px;
 }
 #about-home a{
@@ -723,6 +726,34 @@ body {
     margin-bottom: 2%;
     margin-right: 41%;
 }
+
+/*/////////////
+    GIFs
+/////////////*/
+.gif {
+    width: 480px;
+    height: 360px;
+    background-repeat: no-repeat;
+}
+.gif-font-s, .gif-font-m, .gif-font-lg {
+    color: #404040;
+}
+.gif-font-s {
+    font-size: 20px;
+}
+.gif-font-m {
+    font-size: 30px;
+}
+.gif-font-lg {
+    font-size: 40px;
+}
+
+
+#zirael {
+    background-image: url(../external/Animation/Zirael_Rotation.gif);
+}
+
+
 /*//////////////////
     Resizing
 //////////////////*/

@@ -67,7 +67,7 @@ function init() {
     /*
      * Auto-scroll to sections.
      */
-    var home, rec, cont, projects, darrow, books, games;
+    var home, rec, cont, projects, darrow, books, games, anim;
     home = $(".btn-home");
     rec = $(".btn-rec");
     cont = $(".btn-cont");
@@ -75,6 +75,8 @@ function init() {
     darrow = $("#darrow");
     books = $("#b");
     games = $("#g");
+    anim = $("#a");
+    
     home.click(function(){
         $("#about").goTo();
     });
@@ -95,6 +97,9 @@ function init() {
     });
     games.click(function(){
         $("#sec2").goTo();
+    });
+    anim.click(function(){
+        $("#sec3").goTo();
     });
     (function() {
         $.fn.goTo = function() {

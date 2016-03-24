@@ -44,17 +44,19 @@ function init(){
     //camera
     camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 3000);
     camera.position.set(100,50,300);
-
+ 
     //scene
     scene = new THREE.Scene();
     ambient = new THREE.AmbientLight(0x404040);
     scene.add(ambient);
 
+    alert(1);
     //utilities
 //    scene.add(new THREE.AxisHelper(100));
     var controls = new THREE.OrbitControls(camera, renderer.domElement);
     controls.addEventListener('change', light_update);
     //sounds
+    alert(2);
 
     //lights
     var ambient = new THREE.AmbientLight(0x404040);
